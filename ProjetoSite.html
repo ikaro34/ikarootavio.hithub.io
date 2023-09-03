@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .secao {
+            display: none;
+        }
+
+        .secao p {
+            margin-bottom: 20px;
+        }
+
+        .secao ul {
+            padding-left: 20px;
+        }
+
+        .secao ul li {
+            list-style: disc;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+    <script>
+        function mostrarSecao(id) {
+            var secoes = document.getElementsByClassName('secao');
+            for (var i = 0; i < secoes.length; i++) {
+                secoes[i].style.display = 'none';
+            }
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Portfólio Pessoal</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="mostrarSecao('sobre')">Sobre Mim</a></li>
+                <li><a href="javascript:void(0);" onclick="mostrarSecao('formacao')">Formação Educacional</a></li>
+                <li><a href="javascript:void(0);" onclick="mostrarSecao('portfolio')">Portfólio</a></li>
+                <li><a href="javascript:void(0);" onclick="mostrarSecao('contatos')">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="secao">
+            <h2>Sobre Mim</h2>
+            <p>Me chamo Ikaro Otávio Costa, tenho 21 anos e estou cursando Tecnologia em Ciências de Dados. Atualmente trabalho como Analista de Dados em um time de Recrutamento e Seleção de uma empresa. Moro em Montes Claros, Minas Gerais, Brasil.</p>
+        </section>
+
+        <section id="formacao" class="secao">
+            <h2>Formação Educacional</h2>
+            <p>Sou formado apenas no Ensino Médio e estou cursando Tecnologia em Ciências de Dados. Tenho inglês de básico a intermediário.</p>
+        </section>
+
+        <section id="portfolio" class="secao">
+            <h2>Portfólio</h2>
+            <p>Não tenho muitos projetos e nenhum site feito, pois creio que não seja o foco do meu curso em si. Mas minha atividade extensionista é focada no desenvolvimento e aprimoramento em dados do time de RH da minha empresa, com um material que será criado exclusivamente por mim. Completei a fase de coleta e visualização inicial dos dados.</p>
+            <p>Aqui está uma imagem do meu trabalho:</p>
+            <img src="Atividade-Extensionista-Trabalho-Final.png" alt="Trabalho Final" width="900px">
+        </section>
+
+        <section id="contatos" class="secao">
+            <h2>Contatos</h2>
+            <p>Você pode entrar em contato comigo através dos seguintes meios:</p>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/ikarootavio/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    Telefone: (38) 99988-4799
+                </li>
+                <li>
+                    E-mail: <a href="mailto:ikarootavio34@gmail.com">ikarootavio34@gmail.com</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Portfólio Pessoal</p>
+    </footer>
+</body>
+</html>
